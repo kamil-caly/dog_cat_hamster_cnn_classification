@@ -1,11 +1,11 @@
 # dog_cat_hamster_cnn_classification
 
-## This project is an implementation of a convolutional neural network for multiclass classification of three types of images: cats, dogs, and hamsters.
-After processing, there were 1320 images of each type.
+## This project is an implementation of a convolutional neural network for multiclass classification of three types of images: cats, dogs, and hamsters. After processing, there were 1320 images of each type.
+
 
 1) Model
 
-```
+```python
 model = Sequential()
 model.add(layers.Conv2D(filters=32, kernel_size=(3, 3), activation='relu', input_shape=(150, 150, 3)))
 model.add(layers.MaxPooling2D(pool_size=(2, 2)))
@@ -26,14 +26,17 @@ model.compile(optimizer=optimizers.RMSprop(lr=1e-5),
              metrics=['accuracy'])
 ```
 
+
 2) Results after 80 epochs training (not very good)
    
 ![acc](https://github.com/kamil-caly/dog_cat_hamster_cnn_classification/assets/66841315/aa5c7af3-68d6-487d-b80b-718bdfe3a8a8)
 ![loss](https://github.com/kamil-caly/dog_cat_hamster_cnn_classification/assets/66841315/ebb8ab7b-364e-4155-b627-44a61b97649a)
 
+
 4) Confusion matrix
    
 ![confusion_matrix](https://github.com/kamil-caly/dog_cat_hamster_cnn_classification/assets/66841315/0102ea60-ae66-4675-92ea-813b678397d6)
+
 
 6) Possibilities for improvement
 - On the 'loss' and 'accuracy' plots, there is potential for further training of the model.
