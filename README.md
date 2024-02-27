@@ -27,7 +27,7 @@ model.compile(optimizer=optimizers.RMSprop(lr=1e-5),
 ```
 
 
-2) Results after over 100 epochs training
+2) Results after over 100 epochs training (model was training at first about 30 epochs and next 80 epochs)
    
 ![acc](https://github.com/kamil-caly/dog_cat_hamster_cnn_classification/assets/66841315/aa5c7af3-68d6-487d-b80b-718bdfe3a8a8)
 ![loss](https://github.com/kamil-caly/dog_cat_hamster_cnn_classification/assets/66841315/ebb8ab7b-364e-4155-b627-44a61b97649a)
