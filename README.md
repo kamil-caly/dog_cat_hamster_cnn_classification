@@ -27,20 +27,28 @@ model.compile(optimizer=optimizers.RMSprop(lr=1e-5),
 ```
 
 
-2) Results after 80 epochs training (not very good)
+2) Results after over 100 epochs training
    
 ![acc](https://github.com/kamil-caly/dog_cat_hamster_cnn_classification/assets/66841315/aa5c7af3-68d6-487d-b80b-718bdfe3a8a8)
 ![loss](https://github.com/kamil-caly/dog_cat_hamster_cnn_classification/assets/66841315/ebb8ab7b-364e-4155-b627-44a61b97649a)
 
 
-4) Confusion matrix
+3) Results after 200 epochs training
+![metrics](https://github.com/kamil-caly/dog_cat_hamster_cnn_classification/assets/66841315/a6eaa26e-b1f4-4dd0-b568-21bc1691b8d9)
+
+
+4) Confusion matrix: over 100 epochs vs 200 epochs training
    
 ![confusion_matrix](https://github.com/kamil-caly/dog_cat_hamster_cnn_classification/assets/66841315/0102ea60-ae66-4675-92ea-813b678397d6)
-
+![conf_matrix2](https://github.com/kamil-caly/dog_cat_hamster_cnn_classification/assets/66841315/5e133e80-09be-4dc4-9913-1700a56468dc)
+- The strange and interesting thing is that after 200 epochs of training, the model performs worse in recognizing images of dogs and hamsters.
+- The model recognizes images of cats very well. It only incorrectly predicted cats as dogs in 18 cases and incorrectly predicted cats as hamsters in only 2 cases.
+- 
 
 6) Possibilities for improvement
-- On the 'loss' and 'accuracy' plots, there is potential for further training of the model.
+- On the 'loss' and 'accuracy' plots, there is potential for further training of the model (although the accuracy on the validation set stops increasing towards the end).
 - Additionally, parameters can be adjusted, or a pre-trained model such as 'VGG19' can be applied.
+
 
 <em>Data was download from: 
 - https://images.cv/dataset/hamster-image-classification-dataset
