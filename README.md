@@ -43,7 +43,7 @@ model.compile(optimizer=optimizers.RMSprop(lr=1e-5),
 ![conf_matrix2](https://github.com/kamil-caly/dog_cat_hamster_cnn_classification/assets/66841315/5e133e80-09be-4dc4-9913-1700a56468dc)
 - The strange and interesting thing is that after 200 epochs of training, the model performs worse in recognizing images of dogs and hamsters.
 - The model recognizes images of cats very well. It only incorrectly predicted cats as dogs in 18 cases and incorrectly predicted cats as hamsters in only 2 cases.
-- 
+  
 
 6) Possibilities for improvement
 - On the 'loss' and 'accuracy' plots, there is potential for further training of the model (although the accuracy on the validation set stops increasing towards the end).
